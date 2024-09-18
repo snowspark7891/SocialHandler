@@ -1,0 +1,25 @@
+const ASynchandler = (reqhandler)=>{
+    (req,res,next) =>{
+        Promise.resolve(reqhandler(req,res,next)).catch((err)=> next(err))
+    }
+}
+//promise formate
+
+
+
+apprch-2
+// xst1==const ASynchandler = ()=>{}
+// 2.  const ASynchandler = (fn)=>async()=>{} //passed to further function
+    
+// const ASynchandler = (fn)=>async(req,res,next)=>{
+//     try {
+//         await fn(req,res,next)
+//     } catch (error) {
+//         res.status(error.code || 500).json({
+//             success:false,
+//             massage:error.massage
+//         })
+//     }
+// }
+
+export {ASynchandler}
