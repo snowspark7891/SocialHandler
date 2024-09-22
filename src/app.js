@@ -15,3 +15,5 @@ app.use(cookieParser())  //config
 
 
 export {app}//app is created and exported
+// npm install bcrypt
+// npm install jsonwebtoken
