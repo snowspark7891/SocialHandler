@@ -15,7 +15,7 @@ class ApiERror extends Error{
             this.console = console
             this.errors = errors
             
-            if (statck) {
+            if (statck) {                            //kept in loop about this may be change the error
                 this.stack = statck
             } else {
                 Error.captureStackTrace(this,this.constructor)
