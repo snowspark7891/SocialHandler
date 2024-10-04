@@ -1,7 +1,7 @@
 const ASynchandler = (reqhandler)=>{
-    (req,res,next) =>{
+   return (req,res,next) =>{
         Promise.resolve(reqhandler(req,res,next)).catch((err)=> next(err))
-    }
+    }        //higher order function returns the function also or it will be useless
 }
 //promise formate
 
