@@ -17,7 +17,7 @@ app.use(cookieParser())  //config
 
 //routs import 
 
-import userRouter from "../src/routs/user.routs.js"
+import userRouter from '../src/routs/user.routs.js'
  
 //routs declaration
 app.use("/api/v1/users",userRouter) //user routs 
@@ -25,4 +25,4 @@ app.use("/api/v1/users",userRouter) //user routs
 
 export {app}//app is created and exported
 // npm install bcrypt
-// npm install jsonwebtoken
+// npm install jsonwebtoken 
